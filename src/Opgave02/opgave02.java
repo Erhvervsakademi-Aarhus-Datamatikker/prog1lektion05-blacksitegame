@@ -33,14 +33,12 @@ public class opgave02 extends Application {
 
         int x1 = 100;
         int y1 = 100;
-        gc.strokeLine(x1, y1, x1, y1-70);
-        gc.strokeLine(x1, y1, x1+10, y1-70);
-        gc.strokeLine(x1, y1, x1-10, y1-70);
-        gc.strokeLine(x1, y1, x1+20, y1-70);
-        gc.strokeLine(x1, y1, x1-20, y1-70);
-        gc.strokeLine(x1, y1, x1+30, y1-70);
-        gc.strokeLine(x1, y1, x1-30, y1-70);
-        gc.strokeLine(x1, y1, x1+40, y1-70);
-        gc.strokeLine(x1, y1, x1-40, y1-70);
+        int x2 = 60;
+        int y2 = y1-70;
+
+        while (x2<=140){
+            gc.strokeLine(x1,y1,x2,y2);
+            x2+=10;
+        }
     }
 }

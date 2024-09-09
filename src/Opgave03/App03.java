@@ -4,6 +4,6 @@ import javafx.application.Application;
 
 public class App03 {
     public static void main(String[] args) {
-        Application.launch(Opgave03c.class);
+        Application.launch(Opgave03a.class);
     }
 }

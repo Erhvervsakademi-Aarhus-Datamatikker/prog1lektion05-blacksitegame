@@ -32,10 +32,13 @@ public class Opgave03b extends Application {
         // Replace the statement here with your code.
         int y1=0;
         int y2=100;
-        gc.strokeLine(20, y1, 20, y2);
-        gc.strokeLine(40, y1, 40, y2);
-        gc.strokeLine(60, y1, 60, y2);
-        gc.strokeLine(80, y1, 80, y2);
-        gc.strokeLine(100, y1, 100, y2);
+        int x1=20;
+        int x2=20;
+
+        while (x1<=100){
+            gc.strokeLine(x1, y1, x2, y2);
+            x1+=20;
+            x2+=20;
+        }
     }
 }

@@ -30,12 +30,18 @@ public class Opgave03c extends Application {
 
     private void drawShapes(GraphicsContext gc) {
         // Replace the statement here with your code.
-        int x1=0;
-        int x2=100;
-        gc.strokeLine(40, 20,60 , 20);
-        gc.strokeLine(30, 40, 70, 40);
-        gc.strokeLine(20, 60, 80, 60);
-        gc.strokeLine(10, 80, 90, 80);
-        gc.strokeLine(00, 100, 100, 100);
+        int x1=40;
+        int x2=60;
+        int y1=20;
+        int y2=20;
+
+
+        while (x1>=0){
+            gc.strokeLine(x1,y1,x2,y2);
+            x1-=10;
+            x2+=10;
+            y1+=20;
+            y2+=20;
+        }
     }
 }
